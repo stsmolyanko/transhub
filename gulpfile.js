@@ -128,6 +128,7 @@ const scripts = () => {
 exports.scripts = scripts;
 
 
+
 // WebP
 
 const createWebp = () => {
@@ -140,6 +141,8 @@ const createWebp = () => {
 }
 
 exports.createWebp = createWebp;
+
+
 
 // Server
 
@@ -157,6 +160,8 @@ const server = (done) => {
 
 exports.server = server;
 
+
+
 // Reload
 
 const reload = (done) => {
@@ -166,6 +171,8 @@ const reload = (done) => {
 
 exports.reload = reload;
 
+
+
 // Watcher
 
 const watcher = () => {
@@ -173,6 +180,7 @@ const watcher = () => {
   gulp.watch("src/js/**/*.js", gulp.series(scripts));
   gulp.watch("src/*.html", gulp.series(html, reload));
 }
+
 
 
 // Build
@@ -194,6 +202,8 @@ const build = gulp.series(
 );
 
 exports.build = build;
+
+
 
 // Default
 
