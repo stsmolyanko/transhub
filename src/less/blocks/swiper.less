@@ -1,0 +1,63 @@
+.swiper-slide {
+  width: 88.7%;
+
+  @media (max-width: @tablet-width) {
+    width: 91%;
+  }
+
+  @media (max-width: 410px) {
+    width: 88%;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 13px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 13px));
+
+  @media (max-width: @desktop-width) {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 11px);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid @white;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: @white;
+  opacity: 1;
+}
+
+.swiper-button-prev {
+  left: 12%;
+  top: 45%;
+
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.swiper-button-next {
+  right: 12%;
+  top: 45%;
+
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 4vw;
+}

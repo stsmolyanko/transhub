@@ -1,0 +1,39 @@
+.login {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  column-gap: 18px;
+  row-gap: 10px;
+}
+
+.login__item {
+  position: relative;
+}
+
+.login__item_gray {
+  color: @gray;
+}
+
+.login__item:not(:last-child):after {
+  position: absolute;
+  content: "|";
+  top: 0;
+  right: -11px;
+  color: inherit;
+}
+
+.login__link {
+  color: @white-50;
+}
+
+.login__link_gray {
+  color: @gray;
+}
+
+.login__link:hover {
+  color: @white;
+}
+
+.login__link_gray:hover {
+  color: @blue;
+}

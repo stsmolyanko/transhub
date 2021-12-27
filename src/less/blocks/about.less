@@ -1,0 +1,140 @@
+.about {
+  position: relative;
+  padding-top: 180px;
+  background-image: url("../img/stars.svg");
+  background-color: @dark-blue;
+  background-repeat: no-repeat;
+  background-position: center -4px;
+  overflow: hidden;
+
+  @media (max-width: @desktop-width) {
+    padding-top: 85px;
+    background-position: center -50px;
+  }
+
+  @media (max-width: 960px) {
+    padding-top: 25px;
+  }
+
+  @media (max-width: @tablet-width) {
+    padding-top: 0;
+    background-position: center top;
+    background-size: 170%;
+  }
+}
+
+.about__ellipse {
+  position: absolute;
+  top: 257px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2910px;
+  height: 1450px;
+  border-radius: 50%;
+  background-color: @blue;
+  box-shadow: 0 0 40px 40px @white-35 inset;
+
+  @media (max-width: @desktop-width) {
+    top: 163px;
+    width: 185vw;
+    height: 89vw;
+  }
+
+  @media (max-width: 960px) {
+    top: 107px;
+  }
+
+  @media (max-width: @tablet-width) {
+    top: 27vw;
+    width: 325vw;
+    height: 169vw;
+  }
+}
+
+.about__letters {
+  position: relative;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: -22px;
+  width: 95%;
+  height: 170px;
+  background-image: url("../img/letters.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media (max-width: @desktop-width) {
+    width: 85%;
+  }
+
+  @media (max-width: @tablet-width) {
+    height: 37vw;
+    width: 150%;
+    margin-bottom: -20px;
+    background-image: url("../img/letters-mobile.svg");
+  }
+
+}
+
+.about__img-wrapper {
+  @media (max-width: @tablet-width) {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin-bottom: -20px;
+  }
+}
+
+.about__illustration {
+  display: block;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto 143px;
+
+  @media (max-width: @tablet-width) {
+    margin: 0;
+    max-width: 800px;
+    object-fit: cover;
+  }
+}
+
+.about__wrapper {
+  position: relative;
+  z-index: 10;
+  background-color: @blue;
+}
+
+.about__title {
+  margin-bottom: 45px;
+  font-weight: 600;
+  font-size: 80px;
+  color: @white;
+
+  @media (max-width: @desktop-width) {
+    margin-bottom: 28px;
+    font-size: 60px;
+  }
+
+  @media (max-width: @tablet-width) {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
+.about__description {
+  .mp-zero;
+
+  margin-bottom: 59px;
+  width: 800px;
+  font-size: 24px;
+  line-height: 30px;
+  color: @white;
+
+  @media (max-width: @desktop-width) {
+    max-width: 100%;
+    margin-bottom: 38px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

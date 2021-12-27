@@ -1,0 +1,76 @@
+// Global
+
+body {
+  .mp-zero;
+
+  padding-bottom: 200px;
+  font-family: "Avenir Next Cyr", "Arial", sans-serif;
+  font-size: 16px;
+  color: @white-50;
+  background: linear-gradient(0deg, rgba(32,175,255,1) 0%, rgba(32,175,255,1) 46%, rgba(18,3,60,1) 100%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: @white;
+}
+
+ul {
+  .mp-zero;
+
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @media (max-width: @desktop-width) {
+    max-width: 1000px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (max-width: @tablet-width) {
+    min-width: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// Animations
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+

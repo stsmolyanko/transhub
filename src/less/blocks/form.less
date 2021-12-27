@@ -1,0 +1,75 @@
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.form__item {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.form__input {
+  box-sizing: border-box;
+  padding: 17px 15px;
+  border: 1px solid @light-gray;
+  border-radius: 3px;
+
+  @media (max-width: @desktop-width) {
+    padding: 9px 15px;
+  }
+
+  @media (max-width: @tablet-width) {
+    padding: 17px 15px;
+  }
+}
+
+.form__input:focus {
+  outline: 1px solid @black-blue;
+}
+
+.form__registration-button,
+.form__login-button,
+.form__forget-password {
+  width: 100%;
+}
+
+.form__registration-button {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: @blue;
+  background-color: @gray-blue;
+
+  @media (max-width: @desktop-width) {
+    padding: 9px 30px;
+  }
+
+  @media (max-width: @tablet-width) {
+    padding: 17px 15px;
+  }
+
+}
+
+.form__login-button {
+  margin-bottom: 18px;
+  color: @white;
+  background-color: @blue;
+
+  @media (max-width: @desktop-width) {
+    padding: 9px 30px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: @tablet-width) {
+    padding: 17px 15px;
+    margin-bottom: 15px;
+  }
+
+}
+
+.form__forget-password {
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  color: @dark-blue;
+}

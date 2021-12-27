@@ -1,0 +1,38 @@
+.language {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  gap: 19px;
+  text-transform: uppercase;
+}
+
+.language__wrapper {
+  position: relative;
+}
+
+.language__wrapper_gray {
+  color: @gray;
+}
+
+.language__wrapper:not(:last-child):after {
+  position: absolute;
+  content: "/";
+  top: 0;
+  right: -12px;
+  color: inherit;
+}
+
+.language__item {
+  position: relative;
+  cursor: pointer;
+}
+
+.language__item:hover {
+  font-weight: 500;
+  color: @blue;
+}
+
+.language__input:checked + .language__item {
+  font-weight: 500;
+  color: @blue;
+}

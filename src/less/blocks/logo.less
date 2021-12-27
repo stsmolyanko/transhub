@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo_mobile {
+  display: none;
+}
+
+.logo_mobile-visible {
+  @media (max-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.logo__img {
+  @media (max-width: @desktop-width) {
+    width: 95px;
+  }
+}
